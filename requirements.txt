@@ -1,0 +1,66 @@
+absl-py==2.4.0
+altgraph==0.17.5
+attrs==26.1.0
+beautifulsoup4==4.14.3
+certifi==2026.4.22
+cffi==2.0.0
+charset-normalizer==3.4.7
+click @ file:///D:/bld/bld/rattler-build_click_1777219929/work
+cmake==4.3.2
+colorama @ file:///home/conda/feedstock_root/build_artifacts/colorama_1733218098505/work
+comtypes==1.4.16
+contourpy==1.3.2
+cryptography==46.0.6
+cycler==0.12.1
+dlib @ file:///C:/bld/dlib-split_1774832460321/work
+dlib-bin==20.0.1
+docopt==0.6.2
+face-recognition @ file:///home/conda/feedstock_root/build_artifacts/face_recognition_1619808233029/work
+face_recognition_models==0.3.0
+flatbuffers==25.12.19
+fonttools==4.62.1
+idna==3.13
+jax==0.6.2
+jaxlib==0.6.2
+joblib @ file:///C:/Users/task_176786734930694/croot/joblib_1767868144277/work
+Js2Py==0.74
+kiwisolver==1.5.0
+matplotlib==3.10.8
+mediapipe==0.10.14
+mkl-service==2.5.2
+mkl_fft @ file:///C:/miniconda3/conda-bld/mkl_fft_1761592981169/work
+mkl_random @ file:///C:/miniconda3/conda-bld/mkl_random_1761593075610/work
+ml_dtypes==0.5.4
+numpy @ file:///C:/miniconda3/conda-bld/numpy_and_numpy_base_1761579405538/work/dist/numpy-2.2.5-cp310-cp310-win_amd64.whl#sha256=074bffd27eaf24d54337a4bac76b167c7d794ddb6a813f6fa3fb37c91af766a8
+opencv-contrib-python==4.13.0.92
+opencv-python==4.13.0.92
+opt_einsum==3.4.0
+packaging==26.0
+pefile==2024.8.26
+pillow @ file:///D:/bld/bld/rattler-build_pillow_1770794018/work
+pipwin==0.5.2
+protobuf==4.25.9
+pycparser==3.0
+pycryptodome==3.23.0
+pyinstaller==6.20.0
+pyinstaller-hooks-contrib==2026.4
+pyjsparser==2.7.1
+pyparsing==3.3.2
+pypiwin32==223
+PyPrind==2.11.3
+pySmartDL==1.3.4
+python-dateutil==2.9.0.post0
+pyttsx3==2.99
+pywin32==311
+pywin32-ctypes==0.2.3
+requests==2.33.1
+scikit-learn @ file:///C:/b/abs_45qemhn4lg/croot/scikit-learn_1753427401078/work
+scipy @ file:///C:/miniconda3/conda-bld/scipy_1759222090244/work/dist/scipy-1.15.3-cp310-cp310-win_amd64.whl#sha256=2c02ce5f7bc108a9dd2298fac421e55898c14864219396421ffe00419ec8c736
+six==1.17.0
+sounddevice==0.5.5
+soupsieve==2.8.3
+threadpoolctl @ file:///C:/miniconda3/conda-bld/threadpoolctl_1764361785970/work
+typing_extensions==4.15.0
+tzdata==2026.2
+tzlocal==5.3.1
+urllib3==2.6.3
