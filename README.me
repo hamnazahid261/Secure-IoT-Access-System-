@@ -1,8 +1,8 @@
-# 🔐 Secure IoT Access System Using Multimodal Biometrics
+ Secure IoT Access System Using Multimodal Biometrics
 
-## 📌 Project Overview
+# Project Overview
 
-The **Secure IoT Access System Using Multimodal Biometrics** is a biometric-based security system designed to provide secure access control through facial recognition, eye-blink liveness detection, and data encryption.
+The Secure IoT Access System Using Multimodal Biometrics** is a biometric-based security system designed to provide secure access control through facial recognition, eye-blink liveness detection, and data encryption.
 
 The system first verifies a user's identity through face recognition. After successful face authentication, it performs eye-blink detection to ensure that the person in front of the camera is physically present rather than using a static photograph.
 
@@ -10,7 +10,7 @@ An additional security layer is implemented using **Fernet Symmetric Encryption 
 
 The overall project aims to improve traditional access control systems by combining biometric authentication, liveness detection, data protection, and IoT-based door-lock control.
 
-## ✨ Key Features
+## Key Features
 
 ### 1. Face Recognition
 - Detects and recognizes registered users through a camera.
@@ -44,7 +44,7 @@ The overall project aims to improve traditional access control systems by combin
 - Designed to integrate biometric authentication with electronic door-lock hardware.
 - Supports access control through components such as Arduino, ESP32, relay modules, and solenoid door locks.
 
-## ⚙️ System Workflow
+##  System Workflow
 
 1. **Camera Activation:** The camera captures the user's face.
 2. **Face Recognition:** The captured face is compared with registered facial data.
@@ -55,50 +55,48 @@ The overall project aims to improve traditional access control systems by combin
 7. **Decryption:** When required, the system uses the same secret key to decrypt the stored biometric data.
 8. **Access Authorization:** After successful authentication, the system authorizes access to the connected door-lock mechanism.
 
-## 🔒 Encryption and Decryption Implementation
+##  Encryption and Decryption Implementation
 
 Data security is an important part of this project. To protect sensitive biometric information, the system uses **Fernet Symmetric Encryption**, provided by the Python Cryptography library.
 
-### Encryption Process
+## Encryption Process
 - Generates a secret key using Fernet.
 - Uses the secret key to encrypt biometric information.
 - Converts original data into encrypted ciphertext.
 - Stores protected information in encrypted files.
 
-### Decryption Process
+## Decryption Process
 - Loads the previously generated secret key.
 - Reads the encrypted biometric information.
 - Uses Fernet decryption to convert ciphertext back into its original data.
 - Makes the original information available to authorized application processes.
 
-### Security Files
+## Security Files
 
-| File Name | Purpose |
-|---|---|
-| `secret.key` | Stores the encryption and decryption key. |
-| `face_data.enc` | Stores encrypted facial biometric data. |
-| `eye_data.enc` | Stores encrypted eye-related data. |
-| `eye_data.json.enc` | Stores encrypted eye-related JSON data. |
-| `eye_model.pkl` | Stores eye-related model data, if applicable. |
+| File Name          | Description |
+|--------------------|-------------|
+| `secret.key`       | Secret key used for encryption and decryption |
+| `face_data.enc`    | Encrypted facial biometric data |
+| `eye_data.enc`     | Encrypted eye-related biometric data |
+| `eye_data.json.enc`| Encrypted eye-related JSON data |
+| `eye_model.pkl`    | Eye detection/model data |
 
 **Security Benefit:** Encryption helps protect biometric information from unauthorized access, while decryption allows the application to retrieve original data when needed.
 
 ## 🛠️ Technologies and Libraries
 
-| Technology | Purpose |
-|---|---|
-| Python | Main programming language |
-| OpenCV | Camera access and image processing |
-| Face Recognition | Facial authentication |
-| MediaPipe | Eye landmark detection |
-| NumPy | Numerical calculations |
-| Tkinter | Graphical user interface |
-| Pickle | Biometric data serialization |
-| Cryptography (Fernet) | Data encryption and decryption |
-| Pyttsx3 | Voice feedback |
-| Threading | Background task execution |
-
-## 🔌 Hardware Components
+| Technology / Library | Description / Purpose |
+|----------------------|-----------------------|
+| Python               | Main programming language |
+| OpenCV               | Camera access and image processing |
+| face_recognition     | Face detection and authentication |
+| MediaPipe            | Eye landmark detection |
+| NumPy                | Numerical calculations |
+| Tkinter              | Graphical user interface |
+| Pickle               | Data serialization and storage |
+| Cryptography (Fernet)| Biometric data encryption and decryption |
+| Pyttsx3              | Text-to-speech voice feedback |
+| Threading            | Background task execution |
 
 The overall IoT prototype is designed using:
 
