@@ -1,0 +1,146 @@
+# 🔐 Secure IoT Access System Using Multimodal Biometrics
+
+## 📌 Project Overview
+
+The **Secure IoT Access System Using Multimodal Biometrics** is a biometric-based security system designed to provide secure access control through facial recognition, eye-blink liveness detection, and data encryption.
+
+The system first verifies a user's identity through face recognition. After successful face authentication, it performs eye-blink detection to ensure that the person in front of the camera is physically present rather than using a static photograph.
+
+An additional security layer is implemented using **Fernet Symmetric Encryption and Decryption** to protect sensitive biometric information. The system encrypts biometric data before secure storage and decrypts it when the application requires access to the original data.
+
+The overall project aims to improve traditional access control systems by combining biometric authentication, liveness detection, data protection, and IoT-based door-lock control.
+
+## ✨ Key Features
+
+### 1. Face Recognition
+- Detects and recognizes registered users through a camera.
+- Compares captured facial data with previously stored biometric data.
+- Allows the authentication process to continue only after successful face verification.
+
+### 2. Eye Blink Detection
+- Uses MediaPipe to detect eye landmarks.
+- Calculates the Eye Aspect Ratio (EAR) to identify eye movements.
+- Requires three eye blinks for liveness verification.
+- Helps prevent unauthorized access through static photographs.
+
+### 3. Data Encryption
+- Implements Fernet symmetric encryption using the Python Cryptography library.
+- Generates and uses a secret encryption key.
+- Encrypts sensitive biometric data before storage.
+- Protects facial and eye-related data from unauthorized access.
+
+### 4. Data Decryption
+- Uses the same secret key to decrypt previously encrypted biometric files.
+- Restores the original biometric data when required by the application.
+- Makes protected data available for authorized authentication operations.
+- Ensures that encrypted information can only be accessed with the correct key.
+
+### 5. Graphical User Interface
+- Developed using Python Tkinter.
+- Provides an interactive interface for biometric authentication.
+- Displays authentication results and system feedback.
+
+### 6. IoT-Based Access Control
+- Designed to integrate biometric authentication with electronic door-lock hardware.
+- Supports access control through components such as Arduino, ESP32, relay modules, and solenoid door locks.
+
+## ⚙️ System Workflow
+
+1. **Camera Activation:** The camera captures the user's face.
+2. **Face Recognition:** The captured face is compared with registered facial data.
+3. **Face Verification:** If the face matches, the system proceeds to the next authentication stage.
+4. **Eye Blink Detection:** MediaPipe detects eye landmarks and calculates the Eye Aspect Ratio (EAR).
+5. **Liveness Verification:** The user must blink three times to complete the liveness check.
+6. **Encryption:** Sensitive biometric data is encrypted using Fernet and a secret key before secure storage.
+7. **Decryption:** When required, the system uses the same secret key to decrypt the stored biometric data.
+8. **Access Authorization:** After successful authentication, the system authorizes access to the connected door-lock mechanism.
+
+## 🔒 Encryption and Decryption Implementation
+
+Data security is an important part of this project. To protect sensitive biometric information, the system uses **Fernet Symmetric Encryption**, provided by the Python Cryptography library.
+
+### Encryption Process
+- Generates a secret key using Fernet.
+- Uses the secret key to encrypt biometric information.
+- Converts original data into encrypted ciphertext.
+- Stores protected information in encrypted files.
+
+### Decryption Process
+- Loads the previously generated secret key.
+- Reads the encrypted biometric information.
+- Uses Fernet decryption to convert ciphertext back into its original data.
+- Makes the original information available to authorized application processes.
+
+### Security Files
+
+| File Name | Purpose |
+|---|---|
+| `secret.key` | Stores the encryption and decryption key. |
+| `face_data.enc` | Stores encrypted facial biometric data. |
+| `eye_data.enc` | Stores encrypted eye-related data. |
+| `eye_data.json.enc` | Stores encrypted eye-related JSON data. |
+| `eye_model.pkl` | Stores eye-related model data, if applicable. |
+
+**Security Benefit:** Encryption helps protect biometric information from unauthorized access, while decryption allows the application to retrieve original data when needed.
+
+## 🛠️ Technologies and Libraries
+
+| Technology | Purpose |
+|---|---|
+| Python | Main programming language |
+| OpenCV | Camera access and image processing |
+| Face Recognition | Facial authentication |
+| MediaPipe | Eye landmark detection |
+| NumPy | Numerical calculations |
+| Tkinter | Graphical user interface |
+| Pickle | Biometric data serialization |
+| Cryptography (Fernet) | Data encryption and decryption |
+| Pyttsx3 | Voice feedback |
+| Threading | Background task execution |
+
+## 🔌 Hardware Components
+
+The overall IoT prototype is designed using:
+
+- Laptop Camera
+- Arduino
+- ESP32
+- Relay Module
+- Solenoid Electronic Door Lock
+- Microphone
+
+## 🎯 Project Objectives
+
+- Develop a secure biometric authentication system.
+- Verify users through facial recognition.
+- Implement eye-blink detection for liveness verification.
+- Protect sensitive biometric information using encryption.
+- Retrieve protected biometric information through decryption.
+- Reduce the possibility of unauthorized access.
+- Integrate biometric authentication with IoT-based access control.
+
+## 🚀 Future Improvements
+
+- Integration of voice authentication as an additional biometric layer.
+- Advanced anti-spoofing and liveness detection techniques.
+- Improved biometric database management.
+- Enhanced IoT connectivity and remote monitoring.
+- Improved authentication speed and system performance.
+
+## 👩‍💻 Project Information
+
+**Project Title:** Secure IoT Access System Using Multimodal Biometrics
+
+**Developer:** Hamna Zahid
+
+**Project Type:** Final Year Project (FYP)
+
+**Domain:** Artificial Intelligence, Computer Vision, Cybersecurity and Internet of Things (IoT)
+
+**Programming Language:** Python
+
+**GitHub Repository:** [Secure IoT Access System](https://github.com/hamnazahid261/Secure-IoT-Access-System-)
+
+---
+
+*This project demonstrates the practical implementation of facial recognition, eye-blink liveness detection, and cryptographic data protection to develop a more secure biometric access control system.*
